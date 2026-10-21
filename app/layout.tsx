@@ -4,6 +4,7 @@ import "./hero.css";
 import "./innovation.css";
 import "./institutional.css";
 import "./programs.css";
+import "./program-journey.css";
 
 export const metadata: Metadata = {
   title: "LaPEIA — ECT/UFRN",
