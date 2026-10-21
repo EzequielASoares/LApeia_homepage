@@ -24,11 +24,21 @@ export default function Home() {
       </nav>
       <button className="menu" onClick={() => setOpen(!open)} aria-label="Abrir menu" aria-expanded={open}><i /><i /></button>
     </header>
-    <section className="hero hero-brand" id="inicio">
-      <div className="orbit orbit-a" /><div className="orbit orbit-b" /><div className="orbit orbit-c" />
-      <div className="hero-copy"><p className="eyebrow"><span /> ECT · UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE</p><h1>LaPEIA</h1><p className="hero-text">Laboratório de Pesquisa, Extensão e Inovação em Astronomia.</p><a className="text-link hero-explore" href="#iniciativas">Explorar iniciativas <span>↓</span></a></div>
-      <div className="cosmos" aria-hidden="true"><span className="planet planet-one" /><span className="planet planet-two" /><span className="star s1">✦</span><span className="star s2">✧</span><span className="star s3">·</span><span className="star s4">✦</span><div className="cosmos-label">NATAL — RN<br /><b>05°47′ S / 35°12′ W</b></div></div>
-      <div className="hero-foot"><span>01 / 04</span><span>ASTRONOMIA EM MOVIMENTO</span><span>SCROLL PARA EXPLORAR ↓</span></div>
+    <section className="hero hero-institution" id="inicio">
+      <div className="hero-technical" aria-hidden="true"><span>ECT/UFRN · 2026</span><span>ASTRONOMIA · PESQUISA · EXTENSÃO</span></div>
+      <div className="hero-copy">
+        <p className="eyebrow"><span /> ESCOLA DE CIÊNCIAS E TECNOLOGIA · UFRN</p>
+        <h1>LaPEIA</h1>
+        <p className="hero-text">Laboratório de Pesquisa, Extensão e Inovação em Astronomia</p>
+        <p className="hero-brief">Uma estrutura institucional que integra ciência, formação e infraestrutura para ampliar o alcance da Astronomia na ECT/UFRN.</p>
+      </div>
+      <div className="hero-programs" aria-label="Frentes da LaPEIA">
+        <a href="https://titan.ect.ufrn.br/" target="_blank" rel="noreferrer"><span>01 · PESQUISA</span><strong>Titan</strong><Arrow /></a>
+        <a href="https://cometanordestino.ect.ufrn.br/" target="_blank" rel="noreferrer"><span>02 · EXTENSÃO</span><strong>Cometa Nordestino</strong><Arrow /></a>
+        <div><span>03 · INFRAESTRUTURA</span><strong>Supercomputação</strong><small>EM IMPLANTAÇÃO</small></div>
+        <div><span>04 · SERVIÇOS</span><strong>Serviços do Lab</strong><small>EM IMPLANTAÇÃO</small></div>
+      </div>
+      <div className="hero-foot"><span>LAPEIA / ECT-UFRN</span><span>QUATRO FRENTES INTEGRADAS</span><span>SCROLL PARA EXPLORAR ↓</span></div>
     </section>
     <section className="intro section" id="laboratorio"><p className="section-index">( 01 — QUEM SOMOS )</p><div className="intro-grid"><h2>Ciência de ponta,<br /><em>com os pés no Nordeste.</em></h2><div><p className="lead">A LaPEIA é a estrutura institucional da Escola de Ciências e Tecnologia da UFRN que reúne pessoas, ideias e ferramentas para explorar o cosmos.</p><p>Consolidamos as iniciativas de Astronomia da ECT/UFRN: o grupo de pesquisa Titan e o programa de extensão Cometa Nordestino. Aqui, o conhecimento circula — da sala de pesquisa à escola, da pergunta à publicação.</p><a className="text-link under" href="#jornada">Entenda o nosso fluxo <Arrow /></a></div></div><div className="marquee" aria-label="Temas de pesquisa">EXOPLANETAS <b>✦</b> EVOLUÇÃO ESTELAR <b>✦</b> ONDAS GRAVITACIONAIS <b>✦</b> COSMOLOGIA <b>✦</b></div></section>
     <section className="initiatives section" id="iniciativas"><div className="section-top"><p className="section-index">( 02 — INICIATIVAS )</p><p>Quatro frentes.<br />Um mesmo horizonte.</p></div><div className="initiative-grid">
