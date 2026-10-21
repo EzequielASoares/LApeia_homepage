@@ -1,0 +1,32 @@
+.initiatives { position: relative; overflow: hidden; background: #f7f6f1; color: #17242d; }
+.initiatives .section-top .section-index { color: #657077; }
+.initiatives .section-top > p:last-child { color: #17242d; }
+.program-grid { position: relative; grid-template-columns: 1.28fr 1.28fr .72fr .72fr; gap: 14px; margin-top: 46px; border: 0; }
+.program-grid .module { position: relative; z-index: 2; min-height: 510px; padding: 22px; border: 0; }
+.program-grid .module-top { font-size: 8px; }
+.program-grid .module-top span:last-child { text-align: right; }
+.titan-program { overflow: hidden; color: #fff; background: linear-gradient(180deg, rgba(3,7,12,.16), rgba(3,7,12,.87)), url("https://titan.ect.ufrn.br/static/img/titan/home/stellar.png") center / cover; background-color: #0d1722; }
+.titan-program:before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 55% 25%, rgba(221,214,205,.4), transparent 27%), radial-gradient(circle at 80% 55%, rgba(111,141,166,.23), transparent 42%); }
+.titan-program > * { position: relative; z-index: 1; }
+.titan-site-logo { display: grid; place-items: center; width: 74px; height: 74px; margin: 18px 0 23px; border: 1px solid rgba(255,255,255,.8); border-radius: 50%; color: #fff; font: 400 16px Georgia, serif; }
+.program-grid h3 { margin-bottom: 17px; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif !important; font-size: clamp(24px, 2.6vw, 39px); font-weight: 700; letter-spacing: -1.5px; line-height: .95; }
+.program-grid .module p { max-width: 310px; margin: 0; font-size: 12px; line-height: 1.5; }
+.program-grid .module-bottom { border-top-color: rgba(255,255,255,.4); }
+.program-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 22px; }
+.program-tags span { padding: 6px 8px; border: 1px solid currentColor; font-size: 7px; font-weight: 700; letter-spacing: .7px; }
+.comet-program { color: #1d2429; background: #f8f8f5; box-shadow: inset 0 0 0 1px #d6dde0; }
+.comet-program .module-top, .comet-program .module-bottom { border-color: #bdc9cf; }
+.cometa-site-logo { display: flex; flex-direction: column; margin: 26px 0 28px; font: 800 clamp(24px, 2.5vw, 37px)/.82 "Helvetica Neue", Arial, sans-serif; letter-spacing: -1.5px; }
+.cometa-site-logo b:last-child { color: #68a9d7; }
+.future-program { color: #151515; background: #fbfbf8; border: 1px dashed #778087 !important; }
+.future-program .module-top { color: #5b6266; }
+.future-program .module-top span:last-child { display: none; }
+.future-program .module-bottom { border-top: 1px dashed #889094; color: #3e464a; }
+.future-program .module-body { display: flex; flex-direction: column; justify-content: center; }
+.future-number { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; margin-bottom: 22px; border: 1px solid #1d2327; border-radius: 50%; font-size: 10px; font-weight: 700; }
+.future-program h3 { font-size: clamp(20px, 2vw, 29px); }
+.future-route { position: absolute; z-index: 1; top: 52%; right: -9vw; left: 53%; height: 2px; background: repeating-linear-gradient(90deg, #323b40 0 6px, transparent 6px 15px); }
+.future-route:after { content: ""; position: absolute; right: 0; top: -4px; width: 10px; height: 10px; border-top: 1px solid #323b40; border-right: 1px solid #323b40; transform: rotate(45deg); }
+.future-route span { position: absolute; top: -22px; left: 4%; color: #596267; font-size: 7px; font-weight: 700; letter-spacing: 1px; }
+@media (max-width: 900px) { .program-grid { grid-template-columns: 1fr 1fr; }.program-grid .module { min-height: 420px; }.future-route { display: none; } }
+@media (max-width: 560px) { .program-grid { grid-template-columns: 1fr; }.program-grid .module { min-height: 360px; }.titan-site-logo { margin-top: 5px; }.program-grid h3 { font-size: 30px; } }
