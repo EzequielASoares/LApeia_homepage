@@ -40,6 +40,14 @@ export default function Home() {
       </div>
       <div className="hero-foot"><span>LAPEIA / ECT-UFRN</span><span>QUATRO FRENTES INTEGRADAS</span><span>SCROLL PARA EXPLORAR ↓</span></div>
     </section>
+    <section className="innovation section" id="inovacao">
+      <div className="innovation-heading"><p className="section-index">( 01 — AMBIENTE DE INOVAÇÃO )</p><h2>Conhecimento que<br /><em>ganha forma.</em></h2><p>A pesquisa na LaPEIA se conecta a tecnologias, ferramentas e experiências que aproximam dados, pessoas e novas possibilidades.</p></div>
+      <div className="innovation-gallery">
+        <figure className="innovation-large"><img src="/images/prototipagem-3d.png" alt="Impressora 3D produzindo um modelo de terreno lunar em ambiente de laboratório" /><figcaption><span>01</span> Prototipagem e visualização científica</figcaption></figure>
+        <figure><img src="/images/realidade-virtual.png" alt="Pesquisadora utilizando realidade virtual em laboratório de astronomia" /><figcaption><span>02</span> Experiências imersivas</figcaption></figure>
+        <figure><img src="/images/computacao-cientifica.png" alt="Pesquisador analisando dados astronômicos em estação de computação científica" /><figcaption><span>03</span> Computação científica</figcaption></figure>
+      </div>
+    </section>
     <section className="intro section" id="laboratorio"><p className="section-index">( 01 — QUEM SOMOS )</p><div className="intro-grid"><h2>Ciência de ponta,<br /><em>com os pés no Nordeste.</em></h2><div><p className="lead">A LaPEIA é a estrutura institucional da Escola de Ciências e Tecnologia da UFRN que reúne pessoas, ideias e ferramentas para explorar o cosmos.</p><p>Consolidamos as iniciativas de Astronomia da ECT/UFRN: o grupo de pesquisa Titan e o programa de extensão Cometa Nordestino. Aqui, o conhecimento circula — da sala de pesquisa à escola, da pergunta à publicação.</p><a className="text-link under" href="#jornada">Entenda o nosso fluxo <Arrow /></a></div></div><div className="marquee" aria-label="Temas de pesquisa">EXOPLANETAS <b>✦</b> EVOLUÇÃO ESTELAR <b>✦</b> ONDAS GRAVITACIONAIS <b>✦</b> COSMOLOGIA <b>✦</b></div></section>
     <section className="initiatives section" id="iniciativas"><div className="section-top"><p className="section-index">( 02 — INICIATIVAS )</p><p>Quatro frentes.<br />Um mesmo horizonte.</p></div><div className="initiative-grid">
       <a className="module titan" href="https://titan.ect.ufrn.br/" target="_blank" rel="noreferrer"><div className="module-top"><span>01</span><span>GRUPO DE PESQUISA</span><Arrow /></div><div className="module-body"><span className="module-symbol">◒</span><h3>Titan</h3><p>Time de Astrofísica<br />e Exoplanetologia</p></div><div className="module-bottom">Acessar pesquisa <Arrow /></div></a>
