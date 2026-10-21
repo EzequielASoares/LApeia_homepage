@@ -5,6 +5,7 @@ import "./innovation.css";
 import "./institutional.css";
 import "./programs.css";
 import "./program-journey.css";
+import "./responsive-nav.css";
 
 export const metadata: Metadata = {
   title: "LaPEIA — ECT/UFRN",
@@ -14,6 +15,10 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
   },
 };
+
+// A página institucional não depende de dados por requisição e pode ser
+// pré-gerada para a versão estática do GitHub Pages.
+export const dynamic = "force-static";
 
 export default function RootLayout({
   children,

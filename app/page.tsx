@@ -1,7 +1,3 @@
-"use client";
-
-import { useState } from "react";
-
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
 const StarMark = () => (
@@ -14,15 +10,14 @@ const StarMark = () => (
 );
 
 export default function Home() {
-  const [open, setOpen] = useState(false);
   return <main>
     <div className="grain" />
     <header className="topbar">
       <a className="wordmark" href="#inicio" aria-label="LaPEIA, página inicial"><StarMark /><span>LaPEIA<small>ECT · UFRN</small></span></a>
-      <nav className={open ? "nav open" : "nav"} aria-label="Navegação principal">
-        <a href="#laboratorio" onClick={() => setOpen(false)}>O laboratório</a><a href="#iniciativas" onClick={() => setOpen(false)}>Iniciativas</a><a href="#jornada" onClick={() => setOpen(false)}>Sua jornada</a><a className="nav-cta" href="#participar" onClick={() => setOpen(false)}>Fazer parte <Arrow /></a>
+      <nav className="nav" id="navegacao" aria-label="Navegação principal">
+        <a href="#laboratorio">O laboratório</a><a href="#iniciativas">Iniciativas</a><a href="#jornada">Sua jornada</a><a className="nav-cta" href="#participar">Fazer parte <Arrow /></a>
       </nav>
-      <button className="menu" onClick={() => setOpen(!open)} aria-label="Abrir menu" aria-expanded={open}><i /><i /></button>
+      <a className="menu" href="#navegacao" aria-label="Ir para a navegação"><i /><i /></a>
     </header>
     <section className="hero hero-institution" id="inicio">
       <div className="hero-technical" aria-hidden="true"><span>ECT/UFRN · 2026</span><span>ASTRONOMIA · PESQUISA · EXTENSÃO</span></div>
