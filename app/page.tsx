@@ -24,9 +24,9 @@ export default function Home() {
       </nav>
       <button className="menu" onClick={() => setOpen(!open)} aria-label="Abrir menu" aria-expanded={open}><i /><i /></button>
     </header>
-    <section className="hero" id="inicio">
+    <section className="hero hero-brand" id="inicio">
       <div className="orbit orbit-a" /><div className="orbit orbit-b" /><div className="orbit orbit-c" />
-      <div className="hero-copy"><p className="eyebrow"><span /> Laboratório de Pesquisa, Extensão e Inovação em Astronomia</p><h1>O universo<br /><em>começa</em> aqui.</h1><p className="hero-text">Da ECT/UFRN para o céu inteiro. Um lugar para aprender, pesquisar, compartilhar e transformar curiosidade em descoberta.</p><div className="hero-actions"><a className="button dark" href="#iniciativas">Conheça nossas frentes <Arrow /></a><a className="text-link" href="#laboratorio">Explorar a LaPEIA <span>↓</span></a></div></div>
+      <div className="hero-copy"><p className="eyebrow"><span /> ECT · UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE</p><h1>LaPEIA</h1><p className="hero-text">Laboratório de Pesquisa, Extensão e Inovação em Astronomia.</p><a className="text-link hero-explore" href="#iniciativas">Explorar iniciativas <span>↓</span></a></div>
       <div className="cosmos" aria-hidden="true"><span className="planet planet-one" /><span className="planet planet-two" /><span className="star s1">✦</span><span className="star s2">✧</span><span className="star s3">·</span><span className="star s4">✦</span><div className="cosmos-label">NATAL — RN<br /><b>05°47′ S / 35°12′ W</b></div></div>
       <div className="hero-foot"><span>01 / 04</span><span>ASTRONOMIA EM MOVIMENTO</span><span>SCROLL PARA EXPLORAR ↓</span></div>
     </section>

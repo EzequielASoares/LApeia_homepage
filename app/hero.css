@@ -1,0 +1,67 @@
+/* The first screen is intentionally reduced to the identity itself. */
+.hero.hero-brand { display: block; min-height: calc(100svh - 82px); }
+
+.hero-brand .hero-copy {
+  position: absolute;
+  z-index: 3;
+  left: 5vw;
+  right: 5vw;
+  top: 49%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.hero-brand .eyebrow { justify-content: center; margin: 0 auto; }
+
+.hero-brand h1 {
+  margin: 22px 0 16px;
+  font-size: clamp(110px, 18vw, 310px);
+  line-height: .72;
+  letter-spacing: -.09em;
+}
+
+.hero-brand .hero-text {
+  max-width: none;
+  margin: 0 auto;
+  font: 12px/1.5 Arial, Helvetica, sans-serif;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+}
+
+.hero-explore {
+  display: inline-block;
+  margin-top: 31px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid currentColor;
+}
+
+.hero-brand .cosmos {
+  z-index: 1;
+  top: 12%;
+  right: 8vw;
+  bottom: 13%;
+  left: 8vw;
+  width: auto;
+  border-left: 0;
+  opacity: .76;
+}
+
+.hero-brand .cosmos:before { width: min(54vw, 760px); height: min(22vw, 310px); }
+.hero-brand .cosmos:after { width: min(43vw, 600px); height: min(40vw, 540px); }
+
+@media (max-width: 800px) {
+  .hero.hero-brand { min-height: 800px; }
+  .hero-brand .hero-copy { left: 7vw; right: 7vw; top: 38%; transform: translateY(-50%); }
+  .hero-brand h1 { font-size: clamp(75px, 19vw, 155px); letter-spacing: -.09em; }
+  .hero-brand .cosmos { top: auto; right: 7vw; bottom: 55px; left: 7vw; height: 300px; opacity: .62; }
+  .hero-brand .hero-text { font-size: 10px; }
+}
+
+@media (max-width: 480px) {
+  .hero.hero-brand { min-height: 750px; }
+  .hero-brand .hero-copy { top: 36%; }
+  .hero-brand h1 { font-size: 24vw; }
+  .hero-brand .eyebrow { max-width: 260px; font-size: 8px; }
+  .hero-brand .hero-text { max-width: 280px; }
+  .hero-brand .cosmos { height: 260px; }
+}
