@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./hero.css";
 import "./innovation.css";
+import "./institutional.css";
 
 export const metadata: Metadata = {
   title: "LaPEIA — ECT/UFRN",

@@ -1,0 +1,56 @@
+/* A quieter academic system: direct typography and no decorative drafting grid. */
+h1, h2, h3, .wordmark, .lead, .section-top > p:last-child, .module-symbol {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+}
+
+h1, h2, h3 { font-weight: 700; }
+h1 em, h2 em { font-style: normal; }
+
+.hero.hero-institution {
+  background: #f7f6f1 !important;
+}
+
+.hero-institution h1 {
+  color: #10283a;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+  font-size: clamp(88px, 13.5vw, 220px);
+  font-weight: 800;
+  letter-spacing: -.075em;
+  text-transform: uppercase;
+}
+
+.hero-institution .hero-text {
+  color: #244866;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+}
+
+.hero-brief { color: #50565a; }
+.hero-technical { display: none; }
+.hero-institution .hero-foot { border-top: 0; }
+
+.hero-programs {
+  gap: 10px;
+  border: 0;
+}
+
+.hero-programs > * {
+  min-height: 96px;
+  border: 0;
+  background: #ecebe5;
+}
+
+.hero-programs > *:nth-child(1) { background: #e1e7e9; }
+.hero-programs > *:nth-child(2) { background: #eae0d3; }
+.hero-programs > *:nth-child(3), .hero-programs > *:nth-child(4) { background: #e9e9e5; }
+.hero-programs a:hover { background: #244866; }
+.hero-programs strong { font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: clamp(17px, 1.65vw, 25px); font-weight: 700; letter-spacing: -.6px; }
+
+.innovation h2, .intro h2, .journey h2, .join h2, .module h3 { letter-spacing: -2.5px; }
+.module h3 { font-weight: 700; }
+.innovation figcaption { border-bottom: 0; }
+
+@media (max-width: 800px) {
+  .hero-institution h1 { font-size: clamp(70px, 17vw, 130px); }
+  .hero-programs { gap: 7px; }
+}
